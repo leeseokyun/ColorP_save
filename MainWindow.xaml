@@ -42,7 +42,7 @@
         <Border Grid.Column="1" Grid.Row="1" x:Name="colorPanel" Visibility="Visible">
             <ColorPicker  
             ColorChanged="ColorPicker_ColorChanged"
-            ColorSpectrumShape="Ring"
+            ColorSpectrumShape="Box"
             IsMoreButtonVisible="False"
             IsColorSliderVisible="True"
             IsColorChannelTextInputVisible="True"
