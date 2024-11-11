@@ -178,7 +178,7 @@ void winrt::ColorP_size_save::implementation::MainWindow::MenuFlyoutItem_Click(w
 
 void winrt::ColorP_size_save::implementation::MainWindow::MenuFlyoutItem_Click_1(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
 {
-    //ÀúÀå
+    //Ã€ÃºÃ€Ã¥
     FILE* fp;
     fopen_s(&fp, "C:/Users/user/pen_folder/1.txt", "w");
 
@@ -195,7 +195,7 @@ void winrt::ColorP_size_save::implementation::MainWindow::MenuFlyoutItem_Click_1
 
 void winrt::ColorP_size_save::implementation::MainWindow::MenuFlyoutItem_Click_2(winrt::Windows::Foundation::IInspectable const& sender, winrt::Microsoft::UI::Xaml::RoutedEventArgs const& e)
 {
-    //ºÒ·¯¿À±â
+    //ÂºÃ’Â·Â¯Â¿Ã€Â±Ã¢
     FILE* fp;
     fopen_s(&fp, "C:/Users/user/pen_folder/1.txt", "r");
 
@@ -233,6 +233,7 @@ void winrt::ColorP_size_save::implementation::MainWindow::Button2_Click(winrt::W
         Button2().Label(L"Disable");
 
         colorPanel().Visibility(Visibility::Collapsed);
+        CanvasControl().Visibility(Visibility::Collapsed);
     }
     else
     {
@@ -240,6 +241,7 @@ void winrt::ColorP_size_save::implementation::MainWindow::Button2_Click(winrt::W
         Button2().Label(L"Enable");
 
         colorPanel().Visibility(Visibility::Visible);
+        CanvasControl().Visibility(Visibility::Visible);
     }
 }
 
